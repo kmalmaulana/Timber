@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="corner_btn">4dp</dimen>
+    <dimen name="width_stroke">1dp</dimen>
+    <dimen name="width_stroke_btn">0dp</dimen>
+    <dimen name="corner_et">8dp</dimen>
+    <dimen name="margin_auth_logo_app">40dp</dimen>
+    <dimen name="margin_layout">24dp</dimen>
+    <dimen name="margin_layout_panel_time">8dp</dimen>
+
+    <dimen name="padding_et">16dp</dimen>
+    <dimen name="text_body_size">14sp</dimen>
+    <dimen name="margin_auth_et">40dp</dimen>
+    <dimen name="margin_standard">8dp</dimen>
+    <dimen name="text_btn_size">14sp</dimen>
+    <dimen name="margin_auth_to_sign">40dp</dimen>
+    <dimen name="text_caption_size">12sp</dimen>
+    <dimen name="text_question_size">14sp</dimen>
+    <dimen name="height_stroke_size">1dp</dimen>
+    <dimen name="to_front_size">4dp</dimen>
+    <dimen name="padding_standard">8dp</dimen>
+    <dimen name="text_title_qty_size">24sp</dimen>
+    <dimen name="text_title_size">16sp</dimen>
+    <dimen name="btn_qty_size">24dp</dimen>
+    <dimen name="corner_standard">8dp</dimen>
+    <dimen name="img_photo_size">80dp</dimen>
+    <dimen name="elevation_standard_size">2dp</dimen>
+</resources>

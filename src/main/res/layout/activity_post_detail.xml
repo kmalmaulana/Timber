@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/support_toolbar" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_standard"
+            android:layout_marginTop="@dimen/margin_standard"
+            android:layout_marginEnd="@dimen/margin_standard"
+            android:layout_marginBottom="@dimen/margin_standard"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="@dimen/corner_standard"
+            app:cardElevation="@dimen/elevation_standard_size">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_standard"
+                    tools:ignore="UselessLeaf">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/ivPhotoUser"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintBottom_toBottomOf="@id/tvDate"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_standard"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/text_body_size"
+                            app:layout_constraintEnd_toStartOf="@+id/tvDuration"
+                            app:layout_constraintStart_toEndOf="@+id/ivPhotoUser"
+                            app:layout_constraintTop_toTopOf="@+id/ivPhotoUser" />
+
+                        <TextView
+                            android:id="@+id/tvDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="@dimen/text_caption_size"
+                            app:layout_constraintEnd_toEndOf="@+id/tvName"
+                            app:layout_constraintStart_toStartOf="@+id/tvName"
+                            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+                        <ImageView
+                            android:id="@+id/ivPhotoPost"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="@dimen/margin_standard"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvDate"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/tvTitlePost"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_standard"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ivPhotoPost" />
+
+                        <TextView
+                            android:id="@+id/tvDescPost"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="@dimen/text_body_size"
+                            app:layout_constraintEnd_toEndOf="@+id/tvTitlePost"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tvTitlePost" />
+
+                        <LinearLayout
+                            android:id="@+id/ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/margin_standard"
+                            app:layout_constraintTop_toBottomOf="@id/tvDescPost">
+
+                            <TextView
+                                android:id="@+id/tvCatPost"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_standard"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/text_body_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvAcceptedBy"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/text_btn_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="@dimen/text_btn_size"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvDuration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryBackground"
+                            android:fontFamily="@font/roboto_medium"
+                            android:padding="@dimen/padding_standard"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/text_btn_size"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/btnAcceptPost"
+                            style="?attr/actionModeCloseButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_layout"
+                            android:layout_marginBottom="@dimen/margin_standard"
+                            android:background="@drawable/bg_btn"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/text_btn_accept"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/text_btn_size"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/ll" />
+
+                        <Button
+                            android:id="@+id/btnDonePost"
+                            style="?attr/actionModeCloseButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_layout"
+                            android:layout_marginBottom="@dimen/margin_standard"
+                            android:background="@drawable/bg_btn"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="@string/text_btn_done"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/text_btn_size"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/ll" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/colorBackgroundProgressBar"
+        android:translationZ="@dimen/to_front_size"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

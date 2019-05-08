@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_standard"
+    android:layout_marginTop="@dimen/margin_standard"
+    android:layout_marginEnd="@dimen/margin_standard"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/corner_standard"
+    app:cardElevation="@dimen/elevation_standard_size">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_standard">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvPhotoPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/corner_standard"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivPhotoPost"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvPhotoUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_standard"
+            app:cardCornerRadius="@dimen/corner_standard"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toEndOf="@+id/cvPhotoPost"
+            app:layout_constraintTop_toTopOf="@+id/cvPhotoPost">
+
+            <ImageView
+                android:id="@+id/ivPhotoUser"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_standard"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_body_size"
+            app:layout_constraintEnd_toStartOf="@+id/tvDuration"
+            app:layout_constraintStart_toEndOf="@+id/cvPhotoUser"
+            app:layout_constraintTop_toTopOf="@+id/cvPhotoUser" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/text_caption_size"
+            app:layout_constraintEnd_toEndOf="@+id/tvName"
+            app:layout_constraintStart_toStartOf="@+id/tvName"
+            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+        <TextView
+            android:id="@+id/tvTitlePost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_standard"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_body_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/cvPhotoUser"
+            app:layout_constraintTop_toBottomOf="@+id/cvPhotoUser" />
+
+        <TextView
+            android:id="@+id/tvDescPost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_standard"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="@dimen/text_body_size"
+            app:layout_constraintEnd_toEndOf="@+id/tvTitlePost"
+            app:layout_constraintStart_toEndOf="@+id/cvPhotoPost"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitlePost" />
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryBackground"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="@dimen/padding_standard"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/text_btn_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/margin_layout_panel_time"
+        android:layout_marginEnd="@dimen/margin_layout_panel_time"
+        android:padding="@dimen/padding_standard"
+        android:background="@drawable/bg_btn"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/text_content_time_balance"
+                android:textColor="@color/colorButtonText"
+                android:textSize="@dimen/text_body_size" />
+
+            <TextView
+                android:id="@+id/tvTimeBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_standard"
+                android:padding="@dimen/padding_standard"
+                android:background="@color/colorPrimaryBackground"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/text_primary_post_time"
+                android:textColor="@color/colorButtonText"
+                android:textSize="@dimen/text_title_qty_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/text_content_time_spent"
+                android:textColor="@color/colorButtonText"
+                android:textSize="@dimen/text_body_size" />
+
+            <TextView
+                android:id="@+id/tvTimeSpent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_standard"
+                android:padding="@dimen/padding_standard"
+                android:background="@color/colorPrimaryBackground"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/text_primary_post_time"
+                android:textColor="@color/colorButtonText"
+                android:textSize="@dimen/text_title_qty_size" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="true" />
+
+</LinearLayout>

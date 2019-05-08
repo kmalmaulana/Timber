@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#999999</color>
+    <color name="colorAccent">#F9E210</color>
+    <color name="colorDivide">#BDBDBD</color>
+    <color name="colorTextORIcon">#FFFFFF</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <!--<color name="colorBackgroundProgressBar">#CC000000</color>-->
+    <color name="colorBackgroundProgressBar">#FFFFFF</color>
+    <color name="colorPrimaryBackground">#F9F3EE</color>
+    <color name="colorPrimaryBackgroundWhite">#FFFFFF</color>
+    <color name="colorButtonText">#4C4C4C</color>
+</resources>

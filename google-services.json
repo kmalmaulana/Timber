@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "267836663808",
+    "firebase_url": "https://timebarteryeah-5c636.firebaseio.com",
+    "project_id": "timebarteryeah-5c636",
+    "storage_bucket": "timebarteryeah-5c636.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267836663808:android:7a815ad6e3b7f13b",
+        "android_client_info": {
+          "package_name": "com.example.timebarteryeah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "267836663808-24po2ticolnk07hod6hdsj2mpqonqkfr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.timebarteryeah",
+            "certificate_hash": "098fc232e57fa478628258c5cfef3e0d10e9f08e"
+          }
+        },
+        {
+          "client_id": "267836663808-kc1mvn2lnt0l6vcgp3frsa483fmrboe0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVvfJbrqcw6qIgnLnaLbhoZamnMZdCO_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "267836663808-kc1mvn2lnt0l6vcgp3frsa483fmrboe0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

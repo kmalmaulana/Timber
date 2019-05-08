@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.timebarteryeah">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".dis.App"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Sign In -->
+        <activity
+            android:name=".views.activity.SignInActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Sign Up -->
+        <activity
+            android:name=".views.activity.SignUpActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Main -->
+        <activity
+            android:name=".views.activity.MainActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" />
+
+        <!-- Detail Post -->
+        <activity
+            android:name=".views.activity.DetailPostActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Detail Accept Post -->
+        <activity
+            android:name=".views.activity.DetailAcceptPostActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>
